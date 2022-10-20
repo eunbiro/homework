@@ -8,6 +8,11 @@
 </head>
 <body>
   <script>
+
+    const kg = prompt("몸무게를 입력하세요", "kg");
+    const cm = prompt("키를 입력하세요", "m 단위로입력 160cm면 1.6");
+
+
     function bmi(a, b) {
       return a / (b * b);
     }
@@ -18,13 +23,13 @@
 
     const bmi3 = (a, b) => a / (b * b);
 
-    let result = bmi(50, 1.6);
-    let result2 = bmi2(50, 1.6);
-    let result3 = bmi3(50, 1.6);
+    let result = bmi(kg, cm);
+    let result2 = bmi2(kg, cm);
+    let result3 = bmi3(kg, cm);
 
-    console.log(result);
-    console.log(result2);
-    console.log(result3);
+    console.log(`당신의 체지방은 ${result} 입니다.`);
+    console.log(`당신의 체지방은 ${result2} 입니다.`);
+    console.log(`당신의 체지방은 ${result3} 입니다.`);
   </script>
 </body>
 </html>
