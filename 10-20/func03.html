@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    const arr = [52, 273, 32, 103, 275, 24, 57];
+    
+    let min = function ([arr]) {
+      let comp = 0;
+
+      for (let i = 0; i < arr.length - 1; i++) {
+        comp = arr[0];
+
+        if (comp > arr[i]) {
+          comp = arr[i];
+        }
+      }
+      return comp;
+    }
+
+    console.log(`입력하신 숫자는 ${arr} 입니다.`);
+    console.log(`입력하신 숫자의 최소값은 ${min([arr])} 입니다.`);
+    
+
+    // function min(array) {
+    //   let output = array[0];
+
+    //   for (const item of array) {
+    //     if (output > item) {
+    //       output = item;
+    //     }
+    //   }
+
+    //   return output;
+    // }
+
+    // console.log(min(arr));
+  </script>
+</body>
+</html>

@@ -13,15 +13,18 @@
     const cm = prompt("키를 입력하세요", "m 단위로입력 160cm면 1.6");
 
 
-    function bmi(a, b) {
-      return a / (b * b);
+    // 비익명 함수
+    function bmi(weight, height) {
+      return weight / (height * height);
     }
 
-    const bmi2 = function(a, b) {
-      return a / (b * b);
+    // 익명 함수
+    const bmi2 = function(weight, height) {
+      return weight / (height * height);
     }
 
-    const bmi3 = (a, b) => a / (b * b);
+    // 화살표 함수
+    const bmi3 = (weight, height) => weight / (height * height);
 
     let result = bmi(kg, cm);
     let result2 = bmi2(kg, cm);
